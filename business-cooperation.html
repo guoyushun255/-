@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商业合作 - 华夏传统文化·教育共生联合体</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B4513',
+            secondary: '#D2B48C',
+            accent: '#2F4F4F',
+            light: '#F5F5DC',
+            dark: '#333333',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif SC"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5DC;
+      color: #333333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Noto Serif SC', serif;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/id/1036/1920/1080');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background-color: #8B4513;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .btn-secondary {
+      background-color: #D2B48C;
+      color: #333333;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      opacity: 0.9;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .section-padding {
+      padding: 4rem 0;
+    }
+    @media (min-width: 768px) {
+      .section-padding {
+        padding: 6rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="bg-light shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="text-2xl font-serif font-bold text-primary">
+            华夏传统文化·教育共生联合体
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-dark hover:text-primary transition-colors">首页</a>
+          <a href="about.html" class="text-dark hover:text-primary transition-colors">关于我们</a>
+          <a href="charter.html" class="text-dark hover:text-primary transition-colors">章程与白皮书</a>
+          <div class="relative group">
+            <button class="text-dark hover:text-primary transition-colors flex items-center">
+              加入我们
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 hidden group-hover:block">
+              <a href="seed.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">种子成员</a>
+              <a href="partner.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">合作伙伴</a>
+            </div>
+          </div>
+          <a href="article-submission.html" class="text-dark hover:text-primary transition-colors">文章投稿</a>
+          <a href="business-cooperation.html" class="text-dark hover:text-primary transition-colors">商业合作</a>
+          <a href="fund.html" class="text-dark hover:text-primary transition-colors">公益基金</a>
+          <a href="news.html" class="text-dark hover:text-primary transition-colors">新闻动态</a>
+          <a href="contact.html" class="text-dark hover:text-primary transition-colors">联系</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden px-4 py-3 space-y-2 bg-white border-t hidden">
+      <a href="index.html" class="block text-dark hover:text-primary transition-colors">首页</a>
+      <a href="about.html" class="block text-dark hover:text-primary transition-colors">关于我们</a>
+      <a href="charter.html" class="block text-dark hover:text-primary transition-colors">章程与白皮书</a>
+      <div class="pl-4 space-y-1">
+        <a href="seed.html" class="block text-dark hover:text-primary transition-colors">种子成员</a>
+        <a href="partner.html" class="block text-dark hover:text-primary transition-colors">合作伙伴</a>
+      </div>
+      <a href="article-submission.html" class="block text-dark hover:text-primary transition-colors">文章投稿</a>
+      <a href="business-cooperation.html" class="block text-dark hover:text-primary transition-colors">商业合作</a>
+      <a href="fund.html" class="block text-dark hover:text-primary transition-colors">公益基金</a>
+      <a href="news.html" class="block text-dark hover:text-primary transition-colors">新闻动态</a>
+      <a href="contact.html" class="block text-dark hover:text-primary transition-colors">联系</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-[70vh] flex items-center justify-center text-white text-center">
+    <div class="max-w-4xl px-4">
+      <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6">商业合作</h1>
+      <p class="text-xl md:text-2xl mb-8">携手共推传统文化传承与教育发展</p>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-6">合作理念</h2>
+      <p class="text-lg mb-4">华夏传统文化·教育共生联合体致力于搭建一个开放、共赢的平台，与各界伙伴携手推动传统文化的传承与创新，促进教育公平与发展。我们欢迎与认同传统文化价值、具有社会责任感的企业、机构和个人建立深度合作关系。</p>
+      <p class="text-lg mb-8">通过商业合作，我们希望实现资源共享、优势互补，共同探索传统文化的现代转化路径，为基层创作者与教育者提供更多支持，同时为合作伙伴创造有意义的社会价值和品牌价值。</p>
+    </div>
+  </section>
+
+  <!-- Cooperation Fields Section -->
+  <section class="section-padding bg-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-12 text-center">合作领域</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">农事文化</h3>
+          <p class="text-gray-700">传统农耕知识、节气文化、乡村振兴、农业遗产保护等。</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">中医文化</h3>
+          <p class="text-gray-700">传统中医药知识、养生文化、健康生活方式等。</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">历史文化</h3>
+          <p class="text-gray-700">历史遗迹保护、历史故事传承、博物馆合作等。</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">民俗文化</h3>
+          <p class="text-gray-700">传统节日、民间习俗、地方特色文化等。</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">国乐与曲艺</h3>
+          <p class="text-gray-700">传统音乐、戏曲、曲艺表演、乐器制作等。</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg card-hover">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold mb-3">诗歌与文学</h3>
+          <p class="text-gray-700">古典诗词、传统文学、现代创作、出版合作等。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cooperation Modes Section -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-8">合作模式</h2>
+      <div class="space-y-6">
+        <div class="bg-light p-6 rounded-lg">
+          <h3 class="text-xl font-serif font-bold mb-3">品牌合作</h3>
+          <p class="text-gray-700">通过联合品牌活动、文化IP授权、产品联名等方式，共同打造具有传统文化特色的品牌形象。</p>
+        </div>
+        <div class="bg-light p-6 rounded-lg">
+          <h3 class="text-xl font-serif font-bold mb-3">内容合作</h3>
+          <p class="text-gray-700">共同开发传统文化内容，包括课程、图书、音像制品、数字内容等，推动传统文化的现代传播。</p>
+        </div>
+        <div class="bg-light p-6 rounded-lg">
+          <h3 class="text-xl font-serif font-bold mb-3">活动合作</h3>
+          <p class="text-gray-700">联合举办传统文化展览、讲座、工作坊、节会等活动，扩大传统文化的社会影响力。</p>
+        </div>
+        <div class="bg-light p-6 rounded-lg">
+          <h3 class="text-xl font-serif font-bold mb-3">教育合作</h3>
+          <p class="text-gray-700">与教育机构合作，开发传统文化教育课程，支持乡村教育，推动教育公平。</p>
+        </div>
+        <div class="bg-light p-6 rounded-lg">
+          <h3 class="text-xl font-serif font-bold mb-3">公益合作</h3>
+          <p class="text-gray-700">共同开展传统文化保护与传承的公益项目，支持基层创作者与教育者。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cooperation Advantages Section -->
+  <section class="section-padding bg-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-8">合作优势</h2>
+      <div class="space-y-4">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+          <div>
+            <h3 class="text-lg font-serif font-bold mb-2">资源整合</h3>
+            <p class="text-gray-700">整合传统文化领域的专家、创作者、教育者资源，为合作提供专业支持。</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+          <div>
+            <h3 class="text-lg font-serif font-bold mb-2">社会价值</h3>
+            <p class="text-gray-700">通过合作推动传统文化传承与教育发展，创造积极的社会价值，提升品牌美誉度。</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+          <div>
+            <h3 class="text-lg font-serif font-bold mb-2">创新转化</h3>
+            <p class="text-gray-700">探索传统文化的现代转化路径，为合作伙伴提供创新的文化内容和产品。</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">4</div>
+          <div>
+            <h3 class="text-lg font-serif font-bold mb-2">平台支持</h3>
+            <p class="text-gray-700">提供线上线下平台支持，帮助合作伙伴扩大影响力和市场份额。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form Section -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-8">合作申请</h2>
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="company" class="block text-gray-700 font-medium mb-2">公司/机构名称</label>
+            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+          <div>
+            <label for="contact" class="block text-gray-700 font-medium mb-2">联系人</label>
+            <input type="text" id="contact" name="contact" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="phone" class="block text-gray-700 font-medium mb-2">联系电话</label>
+            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-medium mb-2">电子邮箱</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+        </div>
+        <div>
+          <label for="cooperation-field" class="block text-gray-700 font-medium mb-2">合作领域</label>
+          <select id="cooperation-field" name="cooperation-field" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+            <option value="">请选择合作领域</option>
+            <option value="farming">农事文化</option>
+            <option value="tcm">中医文化</option>
+            <option value="history">历史文化</option>
+            <option value="folk">民俗文化</option>
+            <option value="music">国乐与曲艺</option>
+            <option value="literature">诗歌与文学</option>
+            <option value="other">其他领域</option>
+          </select>
+        </div>
+        <div>
+          <label for="cooperation-mode" class="block text-gray-700 font-medium mb-2">合作模式</label>
+          <select id="cooperation-mode" name="cooperation-mode" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+            <option value="">请选择合作模式</option>
+            <option value="brand">品牌合作</option>
+            <option value="content">内容合作</option>
+            <option value="event">活动合作</option>
+            <option value="education">教育合作</option>
+            <option value="charity">公益合作</option>
+            <option value="other">其他模式</option>
+          </select>
+        </div>
+        <div>
+          <label for="cooperation-plan" class="block text-gray-700 font-medium mb-2">合作计划</label>
+          <textarea id="cooperation-plan" name="cooperation-plan" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请详细描述您的合作计划、预期目标和具体需求"></textarea>
+        </div>
+        <div>
+          <label for="company-intro" class="block text-gray-700 font-medium mb-2">公司/机构介绍</label>
+          <textarea id="company-intro" name="company-intro" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请简要介绍您的公司/机构，包括主营业务、规模、发展历程等"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn-primary">提交合作申请</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding bg-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-serif font-bold mb-6">联系我们</h2>
+      <p class="text-lg mb-8">如果您对商业合作有任何疑问，或希望了解更多合作详情，欢迎通过以下方式联系我们。</p>
+      <div class="space-y-4">
+        <p class="text-lg"><strong>邮箱：</strong>business@cteeunion.org</p>
+        <p class="text-lg"><strong>电话：</strong>暂为虚拟组织，仅线上办公</p>
+        <p class="text-lg"><strong>地址：</strong>暂为虚拟组织，仅线上办公</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-serif font-bold mb-4">华夏传统文化·教育共生联合体</h3>
+          <p class="mb-4">让手艺有尊严，让教育有根脉</p>
+          <p class="text-gray-300">为基层创作者与教育者而建</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">快速链接</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-secondary transition-colors">首页</a></li>
+            <li><a href="about.html" class="hover:text-secondary transition-colors">关于我们</a></li>
+            <li><a href="charter.html" class="hover:text-secondary transition-colors">章程与白皮书</a></li>
+            <li><a href="seed.html" class="hover:text-secondary transition-colors">种子成员</a></li>
+            <li><a href="partner.html" class="hover:text-secondary transition-colors">合作伙伴</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">联系我们</h4>
+          <p class="mb-2">邮箱：info@cteeunion.org</p>
+          <p class="mb-4">地址：暂为虚拟组织，仅线上办公</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+        <p>© 2024 华夏传统文化·教育共生联合体. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 移动端菜单切换
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+      
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      }
+    });
+  </script>
+</body>
+</html>

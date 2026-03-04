@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>章程与白皮书 - 华夏传统文化·教育共生联合体</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B4513',
+            secondary: '#D2B48C',
+            accent: '#2F4F4F',
+            light: '#F5F5DC',
+            dark: '#333333',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif SC"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5DC;
+      color: #333333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Noto Serif SC', serif;
+    }
+    .btn-secondary {
+      background-color: #D2B48C;
+      color: #333333;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      opacity: 0.9;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .section-padding {
+      padding: 4rem 0;
+    }
+    @media (min-width: 768px) {
+      .section-padding {
+        padding: 6rem 0;
+      }
+    }
+    .chapter {
+      margin-bottom: 2rem;
+    }
+    .article {
+      margin-bottom: 1.5rem;
+    }
+    .article-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="bg-light shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="text-2xl font-serif font-bold text-primary">
+            华夏传统文化·教育共生联合体
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-dark hover:text-primary transition-colors">首页</a>
+          <a href="about.html" class="text-dark hover:text-primary transition-colors">关于我们</a>
+          <a href="charter.html" class="text-dark hover:text-primary transition-colors">章程与白皮书</a>
+          <div class="relative group">
+            <button class="text-dark hover:text-primary transition-colors flex items-center">
+              加入我们
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 hidden group-hover:block">
+              <a href="seed.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">种子成员</a>
+              <a href="partner.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">合作伙伴</a>
+            </div>
+          </div>
+          <a href="article-submission.html" class="text-dark hover:text-primary transition-colors">文章投稿</a>
+          <a href="business-cooperation.html" class="text-dark hover:text-primary transition-colors">商业合作</a>
+          <a href="fund.html" class="text-dark hover:text-primary transition-colors">公益基金</a>
+          <a href="news.html" class="text-dark hover:text-primary transition-colors">新闻动态</a>
+          <a href="contact.html" class="text-dark hover:text-primary transition-colors">联系</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden px-4 py-3 space-y-2 bg-white border-t hidden">
+      <a href="index.html" class="block text-dark hover:text-primary transition-colors">首页</a>
+      <a href="about.html" class="block text-dark hover:text-primary transition-colors">关于我们</a>
+      <a href="charter.html" class="block text-dark hover:text-primary transition-colors">章程与白皮书</a>
+      <div class="pl-4 space-y-1">
+        <a href="seed.html" class="block text-dark hover:text-primary transition-colors">种子成员</a>
+        <a href="partner.html" class="block text-dark hover:text-primary transition-colors">合作伙伴</a>
+      </div>
+      <a href="article-submission.html" class="block text-dark hover:text-primary transition-colors">文章投稿</a>
+      <a href="business-cooperation.html" class="block text-dark hover:text-primary transition-colors">商业合作</a>
+      <a href="fund.html" class="block text-dark hover:text-primary transition-colors">公益基金</a>
+      <a href="news.html" class="block text-dark hover:text-primary transition-colors">新闻动态</a>
+      <a href="contact.html" class="block text-dark hover:text-primary transition-colors">联系</a>
+    </div>
+  </nav>
+
+  <!-- Charter Hero -->
+  <section class="bg-primary text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">章程与白皮书</h1>
+      <p class="text-xl">透明公开，共建共享</p>
+    </div>
+  </section>
+
+  <!-- Charter Section -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-serif font-bold">华夏传统文化·教育共生联合体章程</h2>
+        <a href="#" class="btn-secondary">下载PDF</a>
+      </div>
+      <div class="bg-light p-8 rounded-lg">
+        <!-- 第一章 总则 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第一章 总则</h3>
+          <div class="article">
+            <div class="article-title">第一条 联合体名称与法律性质</div>
+            <p class="text-gray-700 mb-4">华夏传统文化·教育共生联合体（以下简称“本联合体”），是一个致力于中华优秀传统文化全链路赋能、坚持公益优先、追求共生共赢的行业协作平台。</p>
+            <p class="text-gray-700 mb-4">本联合体依托【请填写具体的注册公司或民办非企业单位全称】进行实体化运营，所有对外法律事务、商业合同签署及经济往来均以该实体名义实施。为便于传播与凝聚共识，对内及行业交流中可使用“公会”称谓，但对外正式文件及法律行为均以注册实体名称为准。</p>
+            <p class="text-gray-700">本联合体区别于传统的泛娱乐公会或纯商业MCN机构。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第二条 核心服务对象</div>
+            <p class="text-gray-700 mb-4">本联合体的核心服务对象覆盖两大群体：</p>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>基层劳动与创作主体：乡村手艺人、农人庄稼人、非遗基层传承人、民间艺术家、乡土创作者、底层内容创作者等。</li>
+              <li>传统文化教育圈从业者：一线美育/劳动教育教师、乡村教师、传统文化教育研究者、研学教育从业者、校园文化社团指导者、青少年传统文化教育创业者等。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第三条 核心宗旨与终极目标</div>
+            <p class="text-gray-700 mb-4">本联合体以“扎根乡土、赋能基层、以文育人、共富共赢”为核心宗旨。所有商业行为与资源投入的最终落脚点，必须实现双向落地：</p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>向下扎根：让基层创作者获得实实在在的收益、体面的尊严与可持续的发展。</li>
+              <li>向上生长：将流量与产业收益反哺教育圈，助力传统文化进校园、美育资源均衡化、乡村教育提质与文化代际传承。</li>
+            </ul>
+            <p class="text-gray-700">本联合体坚决打破“流量被头部截留、利润被中间赚走”的行业乱象，致力于打造 “基层产出内容→联合体赋能变现→收益反哺基层与教育→教育反推文化传承” 的正向闭环。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第四条 核心运营铁则（不可修改之底线）</div>
+            <p class="text-gray-700 mb-4">以下六条原则是本联合体运营的根本纲领，所有成员签署的具体合作协议均不得违反本章程之精神。若具体协议条款与本章程相抵触，以更有利于基层从业者及教育者的条款为准。</p>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>基层优先铁则：资源与收益优先向基层倾斜，任何决策不得损害基层从业者的合法权益。</li>
+              <li>教育反哺铁则：固定比例收益专项用于教育扶持，任何商业行为不得透支教育公益属性。</li>
+              <li>零盘剥铁则：杜绝中间差价、隐形扣费，劳动收益扣除必要成本后最大限度归从业者本人。</li>
+              <li>尊重原生铁则：尊重乡土文化与教育规律，不强行改造、不低俗演绎、不功利化透支。</li>
+              <li>透明公开铁则：所有收益结算与基金使用全程公开，接受全体成员联合监督。</li>
+              <li>长期兜底铁则：不以短期流量为目标，为基层与教育圈提供长期稳定的赋能保障。</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 第二章 联合体定位与核心业务范围 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第二章 联合体定位与核心业务范围</h3>
+          <div class="article">
+            <div class="article-title">第五条 联合体核心定位</div>
+            <p class="text-gray-700">中华优秀传统文化基层从业者的服务中台 + 教育圈资源的共建平台。以自有母IP为流量中枢，打通“乡土-传承-创作-教育”全链路，实现文化传承与教育赋能的双向奔赴。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第六条 核心业务范围</div>
+            <p class="text-gray-700 mb-4"><strong>（一）基层从业者全周期赋能业务（基本盘）</strong></p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>创作者孵化：为基层创作者提供账号定位、拍摄指导、IP全周期规划。</li>
+              <li>流量运营：母IP导流、矩阵联动、平台扶持申报，让好内容被看见。</li>
+              <li>全链路变现：对接品牌合作、电商带货、商演授权、文旅项目，打造多元收入。</li>
+              <li>合规与版权：提供内容审核、版权登记、侵权维权、法务支持。</li>
+              <li>资源整合：对接非遗机构、政府部门、供应链，降低合作门槛。</li>
+            </ul>
+            <p class="text-gray-700 mb-4"><strong>（二）教育圈全维度反哺业务（落地项）</strong></p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>教育资源共建共享：联合开发标准化校本课程、劳动教育课件、美育教材，免费向乡村及偏远地区开放。</li>
+              <li>教育从业者赋能：为教师提供免费文化资源、个人IP打造、专业能力培训及教研支持。</li>
+              <li>传统文化进校园：搭建“传承人进校园”“乡土文化课堂”对接桥梁，让传承人有课酬，让学生有收获。</li>
+              <li>研学基地共建：联合乡村工坊、传承基地打造标准化研学产品，为农人、手艺人带来稳定客流。</li>
+              <li>教育公益专项：设立专项基金，用于乡村美育教室建设、教师培训、贫困学生资助等。</li>
+              <li>代际传承孵化：扶持校园社团与青少年创作者，搭建“老传承人-青年教师-青少年”传承梯队。</li>
+            </ul>
+            <p class="text-gray-700"><strong>（三）行业生态搭建</strong><br>对接文旅、教育等部门，举办行业峰会与论坛，推动行业标准规范化发展。</p>
+          </div>
+        </div>
+
+        <!-- 第三章 成员准入与分级管理 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第三章 成员准入与分级管理</h3>
+          <p class="text-gray-700 mb-4">本联合体成员分为两大序列，享有同等话语权与权益保障。</p>
+          <div class="article">
+            <div class="article-title">第七条 通用准入条件</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>热爱中华优秀传统文化，认可联合体核心理念并愿遵守本章程。</li>
+              <li>遵守国家法律法规，无不良信用记录。</li>
+              <li>具备相应专业能力，有长期深耕相关领域的意愿。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第八条 文化创作序列分级</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li><strong>标杆成员（省级以上非遗传承人、行业名家）</strong>：定制化赋能、非独家低分成、核心资源优先。</li>
+              <li><strong>主力成员（中腰部创作者、成熟手艺人）</strong>：一对一运营、全链路赋能、商业优先匹配。</li>
+              <li><strong>潜力成员（素人新人）</strong>：免费标准化孵化，孵化期（通常0-6个月）零分成。孵化期内基础运营成本由联合体承担；若孵化失败，损失由联合体承担；若成功变现，联合体按约定回收前期成本。</li>
+            </ul>
+          </div>
+          <div class="article">
+            <div class="article-title">第九条 教育赋能序列分级</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li><strong>教育专家层（资深专家、教授）</strong>：提供专业指导与审核，享受专项基金优先扶持。</li>
+              <li><strong>主力教育者层（一线教师、研学负责人）</strong>：享受免费课程资源、流量扶持、项目优先对接。</li>
+              <li><strong>潜力教育者层（乡村青年教师、师范生）</strong>：享受免费师资培训、公益项目参与资格。</li>
+            </ul>
+          </div>
+          <div class="article">
+            <div class="article-title">第十条 入驻流程</div>
+            <p class="text-gray-700">申请→审核（3个工作日）→签约（优先非独家轻绑定）→分配对接人→启动赋能。</p>
+          </div>
+        </div>
+
+        <!-- 第四章 权利与义务 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第四章 权利与义务</h3>
+          <div class="article">
+            <div class="article-title">第十一条 联合体的权利</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>对成员内容进行合规与专业审核。</li>
+              <li>统筹商业合作与项目策划。</li>
+              <li>按约定收取合理服务费，用于运营、基金与生态建设。</li>
+              <li>对违规成员予以警告、整改、暂停服务直至解除合作。</li>
+              <li>以联合体名义发起活动，扩大生态影响力。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第十二条 联合体的义务</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>基层赋能：提供全链路免费孵化服务。</li>
+              <li>教育反哺：严格落实专项基金划拨与使用。</li>
+              <li>透明公开：收益结算无隐形扣费，按月提供明细，按季公示基金。</li>
+              <li>权益保护：协助处理侵权、纠纷，为成员发展保驾护航。</li>
+              <li>底线坚守：严格筛选合作，拒绝低俗透支项目。</li>
+              <li>响应服务：建立高效沟通，及时解决成员问题。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第十三条 成员的通用权利</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>免费享受约定的赋能服务。</li>
+              <li>自主决定创作方向，有权拒绝不合理要求。</li>
+              <li>内容分歧裁决权：如与运营团队就内容调性（如“商业流量优化”与“尊重原生属性”的平衡）产生重大分歧，任何一方可申请提交“内容仲裁小组”进行评议。</li>
+              <li>获得透明足额的收益结算与监督权。</li>
+              <li>非独家成员可自由开展外部合作；独家成员享受专属资源。</li>
+              <li>对联合体工作提出建议与监督。</li>
+              <li>优先参与联合体活动，申请专项基金。</li>
+              <li>按规定流程申请退出。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第十四条 创作序列成员专属权利</div>
+            <p class="text-gray-700">优先对接商业资源、优先参与教育项目、免费享受版权服务、优秀作品获得长期版权收益。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第十五条 教育序列成员专属权利</div>
+            <p class="text-gray-700">免费使用课程资源、优先参与教研合作、享受IP打造扶持、申请专项基金、进入教育赋能委员会参与决策。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第十六条 成员的通用义务</div>
+            <p class="text-gray-700">遵守法规与章程、维护联合体形象、配合合理活动安排、尊重知识产权、如实提供资料。</p>
+          </div>
+        </div>
+
+        <!-- 第五章 收益分配与基金管理 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第五章 收益分配与基金管理</h3>
+          <div class="article">
+            <div class="article-title">第十七条 核心原则</div>
+            <p class="text-gray-700">杜绝高抽成，收益优先向一线倾斜，联合体仅收取低比例服务费，全程公开透明。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第十八条 分成比例标准</div>
+            <p class="text-gray-700 mb-4"><strong>（一）文化创作序列</strong></p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>标杆成员：非独家5%-15%</li>
+              <li>主力成员：非独家15%-25%；独家20%-30%</li>
+              <li>潜力成员：孵化期零分成，稳定变现后≤20%</li>
+              <li>教育类合作（进校园等）：成员≥80%，公益项目零分成。</li>
+            </ul>
+            <p class="text-gray-700 mb-4"><strong>（二）教育赋能序列</strong></p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>课程/教研合作：教育者≥80%</li>
+              <li>个人IP商业变现：≤20%</li>
+              <li>进校园授课/师资培训：课酬100%全额发放，联合体零分成。</li>
+              <li>公益/官方扶持项目：原则上零分成。</li>
+            </ul>
+            <p class="text-gray-700"><strong>（三）联合体可持续运营保障机制</strong><br>为确保联合体能够长期稳定地为成员提供服务，当出现以下情况时，经理事会三分之二以上成员（且必须包含至少一名基层代表与一名教育界代表）决议通过，可对部分商业项目的分成比例进行临时调整或引入阶梯式分成模式，但任何调整不得违反第四条“核心运营铁则”，且需提前30日向全体成员公示并说明理由。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第十九条 收益结算规则</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>周期：按月结算，次月15日前支付。</li>
+              <li>凭证：联合体提供完整明细，成员可随时核查。</li>
+              <li>税费：双方依法各自承担相应税费，联合体可提供代扣代缴服务及完税协助。</li>
+              <li>异议：3个工作日内核实反馈，误差当月补足。</li>
+            </ol>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十条 传统文化教育公益专项基金管理</div>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>来源：联合体年度净利润的15%固定划入，同时接受社会捐赠。</li>
+              <li>监管：设立由基层代表、教师代表、专家与联合体负责人共同组成的教育赋能委员会，全权负责审批与监管。</li>
+              <li>运作模式：
+                <ul class="list-disc list-inside ml-8 mt-2 space-y-1">
+                  <li>初期：为提升公信力并降低管理成本，可选择与具备公募资质的正规基金会（如中国青少年发展基金会等）合作，设立专项子基金，借助其成熟的财务透明体系运作。</li>
+                  <li>成熟期：待基金规模与团队专业能力具备条件后，可经教育赋能委员会决议，转为独立运作。</li>
+                </ul>
+              </li>
+              <li>用途：仅限乡村美育、教师培训、学生资助、项目奖励等公益用途。</li>
+              <li>公示：每季度公示收支明细，年度出具审计报告。</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 第六章 组织与运营 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第六章 组织与运营</h3>
+          <div class="article">
+            <div class="article-title">第二十一条 核心组织架构</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li><strong>联合体理事会</strong>：最高决策机构，含基层与教育界代表。</li>
+              <li><strong>运营中心</strong>：负责日常运营与服务。</li>
+              <li><strong>商务与供应链中心</strong>：负责商业对接。</li>
+              <li><strong>合规与版权中心</strong>：负责法务与风控。</li>
+              <li><strong>教育赋能委员会</strong>：专项负责教育板块规划与基金监管。</li>
+              <li><strong>内容仲裁小组</strong>：由理事会选举产生，固定成员包括3名基层成员代表、2名运营代表及1名外部文化专家。负责依据联合体制定的《内容调性白皮书》对内容分歧进行终局裁决。</li>
+            </ul>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十二条 团队运营规范</div>
+            <p class="text-gray-700">坚守服务意识，严禁以权谋私；需深耕领域知识；严守商业机密；接受年度成员满意度调研考核。</p>
+          </div>
+        </div>
+
+        <!-- 第七章 奖惩机制 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第七章 奖惩机制</h3>
+          <div class="article">
+            <div class="article-title">第二十三条 奖励机制</div>
+            <p class="text-gray-700">包括资源倾斜、分成减免、专项扶持、年度荣誉及员工奖励。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十四条 惩处机制</div>
+            <p class="text-gray-700">根据情节轻重，分为轻微违规（口头警告整改）、中度违规（书面警告、暂停服务）、严重违规（解除合作、追究法律责任，并同步行业公示）。</p>
+          </div>
+        </div>
+
+        <!-- 第八章 退出机制 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第八章 退出机制</h3>
+          <div class="article">
+            <div class="article-title">第二十五条 正常退出</div>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>非独家：提前7个工作日申请，结清款项后无违约金解约。</li>
+              <li>独家：提前30个工作日申请，协商收尾项目后友好解约。</li>
+              <li>联合体解散：提前30日公示，结清全部收益，基金剩余资产按章程约定捐赠给公益机构。</li>
+            </ul>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十六条 强制退出</div>
+            <p class="text-gray-700">出现严重违规行为，联合体可单方面解约，并保留追责权利。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十七条 退出后约定</div>
+            <p class="text-gray-700">停止服务，完成已签约项目；互不诋毁，互不泄露机密；可重新申请入驻。</p>
+          </div>
+        </div>
+
+        <!-- 第九章 附则 -->
+        <div class="chapter">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第九章 附则</h3>
+          <div class="article">
+            <div class="article-title">第二十八条 章程修改</div>
+            <p class="text-gray-700">修改需提前7日公示征求意见。涉及核心铁则与专项基金的修改，需经教育赋能委员会与理事会双重表决通过。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第二十九条 争议解决</div>
+            <p class="text-gray-700">优先协商；协商不成的，向联合体注册地人民法院提起诉讼。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第三十条 其他</div>
+            <p class="text-gray-700">未尽事宜由补充协议约定；本章程内所有合作模式、分成标准，均以双方正式签署的《合作协议》为准。联合体将另行制定《内容调性白皮书》，作为内容仲裁与日常运营的参考依据。</p>
+          </div>
+          <div class="article">
+            <div class="article-title">第三十一条 生效日期</div>
+            <p class="text-gray-700">本章程自联合体设立之日起正式生效，最终解释权归华夏传统文化·教育共生联合体所有。</p>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <p class="text-right">华夏传统文化·教育共生联合体</p>
+          <p class="text-right">（依托实体：____________________）</p>
+          <p class="text-right">____年____月____日</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Whitepaper Section -->
+  <section class="section-padding bg-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-serif font-bold">内容调性白皮书（1.0版）</h2>
+        <a href="#" class="btn-secondary">下载PDF</a>
+      </div>
+      <div class="bg-white p-8 rounded-lg">
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">引言：我们为什么需要这份白皮书</h3>
+          <p class="text-gray-700 mb-4">在华夏传统文化·教育共生联合体的运营实践中，我们始终坚持“尊重原生铁则”——尊重乡土文化、传统技艺、农耕文明的原生属性，尊重教育教学的专业规律，不强行改造、不低俗演绎、不功利化透支。</p>
+          <p class="text-gray-700 mb-4">然而，在具体的内容创作与传播过程中，“尊重原生”与“适应平台”“商业变现”之间，难免会产生张力。创作者坚守的“原汁原味”，与运营团队建议的“流量优化”，有时会走向分歧。为了不让这些分歧伤害创作者的热情，也不让联合体失去市场竞争力，我们需要一套共同认可的判断标准。</p>
+          <p class="text-gray-700">这份《内容调性白皮书》，就是为解决这一矛盾而生。它不是束缚创作者的“紧箍咒”，而是保护双方权益的“度量衡”——让“尊重”从抽象的理念，转化为可执行的共识。</p>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第一章 核心理念：什么是“华夏调性”</h3>
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">1.1 我们的内容定位</h4>
+            <p class="text-gray-700 mb-4">本联合体所有成员创作的内容，应当具备以下三个核心特征：</p>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">特征</th>
+                    <th class="py-2 px-4 border-b">内涵</th>
+                    <th class="py-2 px-4 border-b">体现方式</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">真</td>
+                    <td class="py-2 px-4 border-b">真实的技艺、真实的人、真实的情感</td>
+                    <td class="py-2 px-4 border-b">不造假、不摆拍、不虚构传承故事</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">根</td>
+                    <td class="py-2 px-4 border-b">扎根乡土、扎根传统、扎根生活</td>
+                    <td class="py-2 px-4 border-b">保持地域特色、技艺本真、生活气息</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">传</td>
+                    <td class="py-2 px-4 border-b">可传播、可教育、可传承</td>
+                    <td class="py-2 px-4 border-b">兼顾内容质量与传播规律，让年轻人愿意看、看得懂、学得会</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">1.2 调性天平：平衡的艺术</h4>
+            <p class="text-gray-700 mb-4">在具体创作中，我们接受以下“调性天平”的存在：</p>
+            <div class="bg-light p-4 rounded-lg mb-4">
+              <pre class="text-center">原生性 ←──────────→ 传播力
+专业性 ←──────────→ 普适性
+纯粹性 ←──────────→ 商业性</pre>
+            </div>
+            <p class="text-gray-700">我们的目标不是永远站在天平的某一端，而是在明确底线的前提下，根据内容类型、受众场景、创作阶段，进行有意识、有共识的平衡。</p>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第二章 底线红线：不可触碰的“原生禁区”</h3>
+          <p class="text-gray-700 mb-4">以下行为，无论流量多大、收益多高，均属违规。一经发现，内容仲裁小组有权直接判定下架，并视情节依据章程第二十四条进行处理。</p>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">2.1 技艺真实性红线</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">违规类型</th>
+                    <th class="py-2 px-4 border-b">具体表现</th>
+                    <th class="py-2 px-4 border-b">举例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">虚假技艺</td>
+                    <td class="py-2 px-4 border-b">伪造非遗传承人身份、虚构技艺传承谱系</td>
+                    <td class="py-2 px-4 border-b">自称某非遗第X代传人，但无法提供任何证明</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">作假摆拍</td>
+                    <td class="py-2 px-4 border-b">为拍摄效果，使用现代工艺冒充传统技艺</td>
+                    <td class="py-2 px-4 border-b">用机器织的布冒充手工土布，拍摄“手工织布”过程</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">误导性剪辑</td>
+                    <td class="py-2 px-4 border-b">通过剪辑制造“技艺高超”假象</td>
+                    <td class="py-2 px-4 border-b">失败镜头全剪掉，营造“一次成功”的神话</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-700 mb-4">例外说明：为教学演示需要，进行步骤分解拍摄或慢动作展示，不属于虚假技艺，但需在画面或文案中明确说明。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">2.2 文化尊重红线</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">违规类型</th>
+                    <th class="py-2 px-4 border-b">具体表现</th>
+                    <th class="py-2 px-4 border-b">举例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">亵渎性演绎</td>
+                    <td class="py-2 px-4 border-b">以戏谑、低俗方式演绎传统仪式、信仰内容</td>
+                    <td class="py-2 px-4 border-b">用搞笑方式表演祭祀仪式、传统婚俗</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">错误解读</td>
+                    <td class="py-2 px-4 border-b">对传统文化符号进行错误、片面的解读</td>
+                    <td class="py-2 px-4 border-b">将民间传说曲解为封建迷信</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">脱离语境</td>
+                    <td class="py-2 px-4 border-b">脱离原生语境，对传统技艺进行“魔改”</td>
+                    <td class="py-2 px-4 border-b">将传统戏曲唱腔改编成“喊麦”风格</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-700 mb-4">例外说明：鼓励创新性转化，但需明确标注“创新改编版”，且不得亵渎原形式的精神内核。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">2.3 教育专业性红线</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">违规类型</th>
+                    <th class="py-2 px-4 border-b">具体表现</th>
+                    <th class="py-2 px-4 border-b">举例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">错误知识</td>
+                    <td class="py-2 px-4 border-b">教学内容存在明显知识性错误</td>
+                    <td class="py-2 px-4 border-b">将历史人物年代搞错、将工艺步骤说反</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">不当示范</td>
+                    <td class="py-2 px-4 border-b">教学过程中存在安全隐患或不当引导</td>
+                    <td class="py-2 px-4 border-b">教儿童使用危险工具时不强调安全事项</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">功利化教育</td>
+                    <td class="py-2 px-4 border-b">将教育内容过度商业化，误导受众</td>
+                    <td class="py-2 px-4 border-b">在面向儿童的课程中过度推销产品</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">2.4 价值观红线</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">违规类型</th>
+                    <th class="py-2 px-4 border-b">具体表现</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">违法违规</td>
+                    <td class="py-2 px-4 border-b">内容违反国家法律法规、平台规则</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">伤害民族感情</td>
+                    <td class="py-2 px-4 border-b">内容损害民族尊严、伤害民族感情</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">封建迷信</td>
+                    <td class="py-2 px-4 border-b">宣扬封建迷信思想，而非作为文化现象介绍</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第三章 分级标准：哪些层面可以“优化”</h3>
+          <p class="text-gray-700 mb-4">在不触碰底线红线的前提下，以下层面的优化调整，是联合体鼓励的“专业赋能”。</p>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">3.1 表现形式优化（绿灯区）</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">优化方向</th>
+                    <th class="py-2 px-4 border-b">具体建议</th>
+                    <th class="py-2 px-4 border-b">示例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">画面呈现</td>
+                    <td class="py-2 px-4 border-b">提升拍摄稳定性、光线调度、构图美感</td>
+                    <td class="py-2 px-4 border-b">手工艺过程用多机位拍摄，展示细节</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">节奏把控</td>
+                    <td class="py-2 px-4 border-b">根据平台特点调整内容节奏</td>
+                    <td class="py-2 px-4 border-b">短视频平台突出亮点前置，长视频保留完整过程</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">字幕解说</td>
+                    <td class="py-2 px-4 border-b">增加字幕、配音解说，降低理解门槛</td>
+                    <td class="py-2 px-4 border-b">方言内容配普通话字幕，专业术语配解释</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">背景音乐</td>
+                    <td class="py-2 px-4 border-b">适配氛围的音乐选择</td>
+                    <td class="py-2 px-4 border-b">传统技艺配传统器乐，而非流行摇滚</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-700 mb-4">核心理念：形式优化是为了让好内容被更多人看见，而非改变内容本身。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">3.2 内容结构优化（黄灯区——需协商确认）</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">优化方向</th>
+                    <th class="py-2 px-4 border-b">具体建议</th>
+                    <th class="py-2 px-4 border-b">需协商要点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">时长压缩</td>
+                    <td class="py-2 px-4 border-b">根据平台特点调整内容时长</td>
+                    <td class="py-2 px-4 border-b">是否影响技艺完整呈现？是否跳过关键步骤？</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">内容重组</td>
+                    <td class="py-2 px-4 border-b">调整内容呈现顺序</td>
+                    <td class="py-2 px-4 border-b">是否破坏叙事逻辑？是否误导观众认知？</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">元素突出</td>
+                    <td class="py-2 px-4 border-b">强化某些吸引眼球的元素</td>
+                    <td class="py-2 px-4 border-b">被强化的元素是否属于技艺核心？是否喧宾夺主？</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">场景调整</td>
+                    <td class="py-2 px-4 border-b">建议拍摄场景、着装选择</td>
+                    <td class="py-2 px-4 border-b">是否违背创作者日常状态？是否刻意“乡土化”表演？</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-700 mb-4">协商机制：黄灯区优化建议提出后，创作者有权要求运营团队说明优化理由及预期效果，双方达成一致后方可执行。如有分歧，可提交内容仲裁小组。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">3.3 商业化适配优化（黄灯区——需特别审核）</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">优化方向</th>
+                    <th class="py-2 px-4 border-b">具体建议</th>
+                    <th class="py-2 px-4 border-b">审核要点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">产品展示</td>
+                    <td class="py-2 px-4 border-b">在内容中合理展示可转化产品</td>
+                    <td class="py-2 px-4 border-b">是否生硬插入？是否影响内容完整性？</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">卖点提炼</td>
+                    <td class="py-2 px-4 border-b">提炼产品核心卖点用于文案</td>
+                    <td class="py-2 px-4 border-b">是否夸大宣传？是否符合产品实际情况？</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">转化引导</td>
+                    <td class="py-2 px-4 border-b">在适当时机引导用户转化</td>
+                    <td class="py-2 px-4 border-b">是否过度打扰？是否违背内容调性？</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-gray-700 mb-4">特别原则：商业化优化不得以牺牲内容质量为代价，不得误导用户“这是纯内容而非广告”。</p>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第四章 场景化指南：不同内容类型的调性建议</h3>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">4.1 技艺展示类</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">内容类型</th>
+                    <th class="py-2 px-4 border-b">核心目标</th>
+                    <th class="py-2 px-4 border-b">调性建议</th>
+                    <th class="py-2 px-4 border-b">可优化方向</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">完整技艺展示</td>
+                    <td class="py-2 px-4 border-b">记录传承、教学参考</td>
+                    <td class="py-2 px-4 border-b">完整、真实、专业</td>
+                    <td class="py-2 px-4 border-b">多机位、字幕解说、步骤标注</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">技艺亮点展示</td>
+                    <td class="py-2 px-4 border-b">吸引关注、传播亮点</td>
+                    <td class="py-2 px-4 border-b">精彩、直观、易懂</td>
+                    <td class="py-2 px-4 border-b">亮点前置、节奏紧凑、特效辅助</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">日常创作记录</td>
+                    <td class="py-2 px-4 border-b">展现生活状态</td>
+                    <td class="py-2 px-4 border-b">真实、自然、有温度</td>
+                    <td class="py-2 px-4 border-b">轻剪辑、重情感、少修饰</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">4.2 教育课程类</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">内容类型</th>
+                    <th class="py-2 px-4 border-b">核心目标</th>
+                    <th class="py-2 px-4 border-b">调性建议</th>
+                    <th class="py-2 px-4 border-b">可优化方向</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">专业教学课程</td>
+                    <td class="py-2 px-4 border-b">系统传授技能</td>
+                    <td class="py-2 px-4 border-b">严谨、清晰、可操作</td>
+                    <td class="py-2 px-4 border-b">分步骤、配图解、设练习</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">科普传播内容</td>
+                    <td class="py-2 px-4 border-b">普及文化知识</td>
+                    <td class="py-2 px-4 border-b">准确、生动、有趣</td>
+                    <td class="py-2 px-4 border-b">故事化、可视化、互动化</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">校园落地课程</td>
+                    <td class="py-2 px-4 border-b">适配教学场景</td>
+                    <td class="py-2 px-4 border-b">安全、规范、易操作</td>
+                    <td class="py-2 px-4 border-b">课时适配、安全提示、配套材料</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">4.3 生活记录类</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">内容类型</th>
+                    <th class="py-2 px-4 border-b">核心目标</th>
+                    <th class="py-2 px-4 border-b">调性建议</th>
+                    <th class="py-2 px-4 border-b">可优化方向</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">乡村日常生活</td>
+                    <td class="py-2 px-4 border-b">展现乡土风貌</td>
+                    <td class="py-2 px-4 border-b">真实、质朴、有烟火气</td>
+                    <td class="py-2 px-4 border-b">少干预、多观察、真记录</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">节气农事活动</td>
+                    <td class="py-2 px-4 border-b">传播农耕文化</td>
+                    <td class="py-2 px-4 border-b">应时、应景、应节气</td>
+                    <td class="py-2 px-4 border-b">知识补充、文化延伸、视觉美化</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">传承人故事</td>
+                    <td class="py-2 px-4 border-b">讲述人物故事</td>
+                    <td class="py-2 px-4 border-b">真诚、感人、有力量</td>
+                    <td class="py-2 px-4 border-b">叙事结构、情感节奏、细节挖掘</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第五章 分歧裁决：内容仲裁小组运行细则</h3>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">5.1 仲裁触发条件</h4>
+            <p class="text-gray-700 mb-4">出现以下任一情况，创作者或运营团队可申请启动仲裁程序：</p>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>调性分歧：双方就内容是否违反“红线”产生争议</li>
+              <li>优化分歧：黄灯区优化建议经协商仍无法达成一致</li>
+              <li>定性争议：一方认为对方行为违反本白皮书，另一方不认可</li>
+            </ol>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">5.2 仲裁流程</h4>
+            <div class="bg-light p-4 rounded-lg mb-4">
+              <pre class="text-center">步骤一：申请提交 ──→ 步骤二：材料准备 ──→ 步骤三：会议评议 ──→ 步骤四：裁决出具
+  （填写仲裁申请表）   （提供争议内容、双方陈述）   （三方代表评议）   （3个工作日内出具）</pre>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">5.3 裁决依据（按优先级排序）</h4>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>第一优先级：本章程第四条“核心运营铁则”</li>
+              <li>第二优先级：本白皮书第二章“底线红线”</li>
+              <li>第三优先级：本白皮书第三、四章的指导原则</li>
+              <li>第四优先级：内容仲裁小组的专业判断（需说明理由）</li>
+            </ol>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">5.4 裁决效力</h4>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>仲裁裁决为终局决定，双方须遵照执行</li>
+              <li>裁决结果记入成员档案，作为后续合作的参考依据</li>
+              <li>年度典型裁决案例（脱敏后）汇编成册，供全体成员学习参考</li>
+            </ol>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第六章 常见争议场景问答（FAQ）</h3>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">Q1：我是手艺人，运营建议我把制作过程从30分钟压缩到3分钟，说这样才有流量。但我担心压缩后失去了技艺的完整性和庄严感，怎么办？</h4>
+            <p class="text-gray-700 mb-4">A：这是一个典型的黄灯区争议。建议双方先协商：是否可以制作两个版本——一个3分钟的快剪版用于传播吸引，一个30分钟的完整版放在长视频平台或作为教学资料？如果只能选其一，可申请仲裁小组介入，根据该内容的核心目标（传播 vs 记录）进行裁决。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">Q2：运营希望我在视频里穿得更“乡土”一些，说这样更有辨识度。但这就是我日常的穿着，刻意打扮反而让我觉得不自在。这算“强行改造”吗？</h4>
+            <p class="text-gray-700 mb-4">A：这个问题触及“尊重原生”的核心。如果你是农人，日常穿着就是你的真实状态，不需要刻意改变；如果你是手艺人，在工作场景中穿着工作服也是真实的。但如果运营建议的“乡土”是一种脱离你日常的“表演式装扮”，你有权拒绝。建议向运营说明你的真实日常状态，共同找到既真实又符合内容调性的呈现方式。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">Q3：我的内容里有一些传统习俗，运营说可能会被平台判定为“封建迷信”，建议删掉。但这些习俗就是我们生活的一部分，怎么办？</h4>
+            <p class="text-gray-700 mb-4">A：这是一个典型的“红线争议”。首先需要判断：这些习俗是属于文化介绍（作为客观存在的文化现象展示）还是宣扬迷信（鼓励观众相信并实践）。如果是前者，可以通过增加“文化科普”视角的解说、添加“本内容为传统文化介绍”等说明，降低违规风险。如果仍有疑虑，可提交合规中心与仲裁小组联合评议。</p>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">Q4：我是教师，开发的课程被联合体拿去商业化销售，收益分成比例是否合理？</h4>
+            <p class="text-gray-700 mb-4">A：教育类商业合作的分成标准，请参照章程第十八条（二）：教育者收益占比不低于80%。如果课程是非商业的公益用途，联合体零分成。如有具体收益疑问，可向财务中心申请查询明细。</p>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">第七章 白皮书的更新与迭代</h3>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">7.1 版本管理</h4>
+            <p class="text-gray-700 mb-4">本白皮书为1.0版，将根据实际运行情况定期更新迭代。版本更新流程如下：</p>
+            <ol class="list-decimal list-inside mb-4 space-y-2">
+              <li>建议收集：全体成员可随时向理事会提交修改建议</li>
+              <li>年度审议：每年第四季度，理事会组织白皮书专项审议</li>
+              <li>版本发布：新版本经教育赋能委员会与理事会双重表决通过后发布</li>
+            </ol>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">7.2 案例积累</h4>
+            <p class="text-gray-700 mb-4">随着仲裁实践的开展，我们将积累典型案例，逐步形成《内容仲裁案例集》，作为白皮书的配套文件，供成员参考学习。</p>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">结语：让每一种声音都被尊重</h3>
+          <p class="text-gray-700 mb-4">这份白皮书的目标，不是用条条框框束缚创作，而是让每一位创作者都能明白：</p>
+          <ul class="list-disc list-inside mb-4 space-y-2">
+            <li>你的坚守，我们看得见——那些你视为生命的技艺本真，是联合体最珍视的资产</li>
+            <li>你的困惑，我们一起解——当商业与坚守冲突时，有一套公平的机制为你托底</li>
+            <li>你的声音，我们听得见——你不仅是内容的创作者，更是规则的共建者</li>
+          </ul>
+          <p class="text-gray-700 mb-4">华夏传统文化的传承，需要的不是千篇一律的“流量爆款”，而是千姿百态的“真实花开”。愿这份白皮书，能守护每一朵花开出它本来的样子。</p>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <p class="text-right">华夏传统文化·教育共生联合体 理事会</p>
+          <p class="text-right">内容仲裁小组 谨制</p>
+          <p class="text-right">2026年3月</p>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-primary">附件</h3>
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">1. 《内容仲裁申请表》模板</h4>
+            <div class="overflow-x-auto mb-4">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="py-2 px-4 border-b">项目</th>
+                    <th class="py-2 px-4 border-b">内容</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2 px-4 border-b">申请人</td>
+                    <td class="py-2 px-4 border-b">□ 创作者 □ 运营团队</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">争议内容名称</td>
+                    <td class="py-2 px-4 border-b"></td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">争议内容链接/附件</td>
+                    <td class="py-2 px-4 border-b"></td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">争议焦点</td>
+                    <td class="py-2 px-4 border-b">□ 红线争议 □ 优化分歧 □ 其他</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">申请理由</td>
+                    <td class="py-2 px-4 border-b">(请简述争议情况)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">创作者意见</td>
+                    <td class="py-2 px-4 border-b">(附：你认为应该如何处理的理由)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">运营团队意见</td>
+                    <td class="py-2 px-4 border-b">(附：运营团队建议及理由)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">协商情况</td>
+                    <td class="py-2 px-4 border-b">□ 已协商未达成一致 □ 尚未协商（请先协商）</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-4 border-b">申请日期</td>
+                    <td class="py-2 px-4 border-b"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <h4 class="text-xl font-serif font-semibold mb-3">2. 《内容调性自测清单》</h4>
+            <p class="text-gray-700 mb-4">发布前，请用以下问题快速自测：</p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>□ 内容中的技艺/知识是否真实可靠？</li>
+              <li>□是否尊重了所呈现文化的原生属性？</li>
+              <li>□是否有亵渎、歪曲、过度演绎的情况？</li>
+              <li>□如果有商业化元素，是否清晰可辨、不误导？</li>
+              <li>□如果面向未成年人，是否有不当引导？</li>
+              <li>□这个内容发出后，我会愿意让它代表我的形象吗？</li>
+            </ul>
+            <p class="text-gray-700">如果以上任一答案为“否”，请暂缓发布，与运营团队或内容仲裁小组沟通。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency Section -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-8 text-center">季度公示</h2>
+      <div class="bg-light p-8 rounded-lg">
+        <p class="text-gray-700 mb-6">为确保透明度，本联合体定期发布季度公示，包括财务状况、项目进展、资金使用情况等信息。</p>
+        <div class="space-y-4">
+          <a href="news.html" class="block p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors">
+            <div class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">2024年第一季度公示</h3>
+              <span class="text-gray-500">2024-04-15</span>
+            </div>
+          </a>
+          <a href="news.html" class="block p-4 bg-white rounded-lg hover:bg-gray-50 transition-colors">
+            <div class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">2023年第四季度公示</h3>
+              <span class="text-gray-500">2024-01-15</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-serif font-bold mb-4">华夏传统文化·教育共生联合体</h3>
+          <p class="mb-4">让手艺有尊严，让教育有根脉</p>
+          <p class="text-gray-300">为基层创作者与教育者而建</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">快速链接</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-secondary transition-colors">首页</a></li>
+            <li><a href="about.html" class="hover:text-secondary transition-colors">关于我们</a></li>
+            <li><a href="charter.html" class="hover:text-secondary transition-colors">章程与白皮书</a></li>
+            <li><a href="seed.html" class="hover:text-secondary transition-colors">种子成员</a></li>
+            <li><a href="partner.html" class="hover:text-secondary transition-colors">合作伙伴</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">联系我们</h4>
+          <p class="mb-2">邮箱：info@cteeunion.org</p>
+          <p class="mb-4">地址：暂为虚拟组织，仅线上办公</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+        <p>© 2024 华夏传统文化·教育共生联合体. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 移动端菜单切换
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+      
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      }
+    });
+  </script>
+</body>
+</html>

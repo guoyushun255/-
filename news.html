@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新闻动态 - 华夏传统文化·教育共生联合体</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B4513',
+            secondary: '#D2B48C',
+            accent: '#2F4F4F',
+            light: '#F5F5DC',
+            dark: '#333333',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif SC"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5DC;
+      color: #333333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Noto Serif SC', serif;
+    }
+    .btn-primary {
+      background-color: #8B4513;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .btn-secondary {
+      background-color: #D2B48C;
+      color: #333333;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      opacity: 0.9;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .section-padding {
+      padding: 4rem 0;
+    }
+    @media (min-width: 768px) {
+      .section-padding {
+        padding: 6rem 0;
+      }
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="bg-light shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="text-2xl font-serif font-bold text-primary">
+            华夏传统文化·教育共生联合体
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-dark hover:text-primary transition-colors">首页</a>
+          <a href="about.html" class="text-dark hover:text-primary transition-colors">关于我们</a>
+          <a href="charter.html" class="text-dark hover:text-primary transition-colors">章程与白皮书</a>
+          <div class="relative group">
+            <button class="text-dark hover:text-primary transition-colors flex items-center">
+              加入我们
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 hidden group-hover:block">
+              <a href="seed.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">种子成员</a>
+              <a href="partner.html" class="block px-4 py-2 text-sm text-dark hover:bg-light hover:text-primary">合作伙伴</a>
+            </div>
+          </div>
+          <a href="article-submission.html" class="text-dark hover:text-primary transition-colors">文章投稿</a>
+          <a href="business-cooperation.html" class="text-dark hover:text-primary transition-colors">商业合作</a>
+          <a href="fund.html" class="text-dark hover:text-primary transition-colors">公益基金</a>
+          <a href="news.html" class="text-dark hover:text-primary transition-colors">新闻动态</a>
+          <a href="contact.html" class="text-dark hover:text-primary transition-colors">联系</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden px-4 py-3 space-y-2 bg-white border-t hidden">
+      <a href="index.html" class="block text-dark hover:text-primary transition-colors">首页</a>
+      <a href="about.html" class="block text-dark hover:text-primary transition-colors">关于我们</a>
+      <a href="charter.html" class="block text-dark hover:text-primary transition-colors">章程与白皮书</a>
+      <div class="pl-4 space-y-1">
+        <a href="seed.html" class="block text-dark hover:text-primary transition-colors">种子成员</a>
+        <a href="partner.html" class="block text-dark hover:text-primary transition-colors">合作伙伴</a>
+      </div>
+      <a href="article-submission.html" class="block text-dark hover:text-primary transition-colors">文章投稿</a>
+      <a href="business-cooperation.html" class="block text-dark hover:text-primary transition-colors">商业合作</a>
+      <a href="fund.html" class="block text-dark hover:text-primary transition-colors">公益基金</a>
+      <a href="news.html" class="block text-dark hover:text-primary transition-colors">新闻动态</a>
+      <a href="contact.html" class="block text-dark hover:text-primary transition-colors">联系</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">新闻动态</h1>
+      <p class="text-xl">了解联合体的最新动态与活动</p>
+    </div>
+  </section>
+
+  <!-- News List -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-8">
+        <div class="bg-light p-6 rounded-lg card-hover">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <h3 class="text-2xl font-serif font-bold text-primary mb-2 md:mb-0">种子成员招募启动</h3>
+            <span class="text-gray-500">2024-01-15</span>
+          </div>
+          <p class="text-gray-700 mb-4">寻找第一批同行者，共同推动传统文化传承与教育公平。我们欢迎手艺人、非遗传承人、乡村教师等加入我们的种子成员计划，享受免费孵化服务和零分成政策。</p>
+          <a href="news-detail.html" class="text-primary hover:underline flex items-center">
+            阅读更多
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="bg-light p-6 rounded-lg card-hover">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <h3 class="text-2xl font-serif font-bold text-primary mb-2 md:mb-0">联合体章程正式发布</h3>
+            <span class="text-gray-500">2024-01-10</span>
+          </div>
+          <p class="text-gray-700 mb-4">明确组织使命、愿景和运营铁则，为发展奠定基础。章程确立了六大核心运营铁则，包括基层优先、教育反哺、零盘剥等原则，确保联合体始终以服务基层创作者和教育者为核心。</p>
+          <a href="news-detail.html" class="text-primary hover:underline flex items-center">
+            阅读更多
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="bg-light p-6 rounded-lg card-hover">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <h3 class="text-2xl font-serif font-bold text-primary mb-2 md:mb-0">教育专项基金设立</h3>
+            <span class="text-gray-500">2024-01-05</span>
+          </div>
+          <p class="text-gray-700 mb-4">15%净利润专项用于传统文化教育公益，支持乡村教育。基金将用于乡村美育教室建设、教师培训、贫困学生资助等公益项目，助力教育公平与文化传承。</p>
+          <a href="news-detail.html" class="text-primary hover:underline flex items-center">
+            阅读更多
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="bg-light p-6 rounded-lg card-hover">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <h3 class="text-2xl font-serif font-bold text-primary mb-2 md:mb-0">内容调性白皮书发布</h3>
+            <span class="text-gray-500">2024-01-01</span>
+          </div>
+          <p class="text-gray-700 mb-4">发布《内容调性白皮书》，明确联合体的内容创作标准和争议解决机制。白皮书旨在平衡"尊重原生"与"适应平台"之间的张力，为创作者和运营团队提供共同认可的判断标准。</p>
+          <a href="news-detail.html" class="text-primary hover:underline flex items-center">
+            阅读更多
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        
+        <div class="bg-light p-6 rounded-lg card-hover">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+            <h3 class="text-2xl font-serif font-bold text-primary mb-2 md:mb-0">首批合作伙伴签约</h3>
+            <span class="text-gray-500">2023-12-28</span>
+          </div>
+          <p class="text-gray-700 mb-4">与多家品牌方、教育机构和非遗组织达成合作，共同推动传统文化传承与教育公平。合作伙伴将为联合体提供资源支持，助力基层创作者和教育者发展。</p>
+          <a href="news-detail.html" class="text-primary hover:underline flex items-center">
+            阅读更多
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center">
+        <nav class="flex items-center space-x-2">
+          <a href="#" class="px-3 py-1 rounded-md bg-light text-dark hover:bg-secondary transition-colors">上一页</a>
+          <a href="#" class="px-3 py-1 rounded-md bg-primary text-white">1</a>
+          <a href="#" class="px-3 py-1 rounded-md bg-light text-dark hover:bg-secondary transition-colors">2</a>
+          <a href="#" class="px-3 py-1 rounded-md bg-light text-dark hover:bg-secondary transition-colors">3</a>
+          <a href="#" class="px-3 py-1 rounded-md bg-light text-dark hover:bg-secondary transition-colors">下一页</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-serif font-bold mb-4">华夏传统文化·教育共生联合体</h3>
+          <p class="mb-4">让手艺有尊严，让教育有根脉</p>
+          <p class="text-gray-300">为基层创作者与教育者而建</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">快速链接</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-secondary transition-colors">首页</a></li>
+            <li><a href="about.html" class="hover:text-secondary transition-colors">关于我们</a></li>
+            <li><a href="charter.html" class="hover:text-secondary transition-colors">章程与白皮书</a></li>
+            <li><a href="seed.html" class="hover:text-secondary transition-colors">种子成员</a></li>
+            <li><a href="partner.html" class="hover:text-secondary transition-colors">合作伙伴</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-medium mb-4">联系我们</h4>
+          <p class="mb-2">邮箱：info@cteeunion.org</p>
+          <p class="mb-4">地址：暂为虚拟组织，仅线上办公</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-secondary transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+        <p>© 2024 华夏传统文化·教育共生联合体. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 移动端菜单切换
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+      
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      }
+    });
+  </script>
+</body>
+</html>
